@@ -1,0 +1,59 @@
+extends layout
+
+block content
+  table#trainingtable
+    tr
+      th Name
+      th Str
+      th Sta
+      th Pac
+      th Mar
+      th Tac
+      th Wor
+      th Pos
+      th Pas
+      th Cro
+      th Tec
+      th Hea
+      th Fin
+      th Lon
+      th Set
+      th TIsum
+
+    tbody#playerTable
+
+    tr
+      th Name
+      th Str
+      th Sta
+      th Pac
+      th Han
+      th One
+      th Ref
+      th Aer
+      th Jum
+      th Com
+      th Kic
+      th Thr
+      th -
+      th -
+      th -
+      th TIsum
+
+    tbody#gkTable
+
+  #updatebox
+    //- shouldn't really use table here, but it's the easiest way to make it look good
+    table 
+      tr
+        th(colspan ="2") Update training?
+      tr
+        td(style="text-align: right;") Fetched Update:
+        td#fetchDate #{fetchedUpdate}
+      tr         
+        td Processed Update:
+        td#procDate #{processedUpdate}
+      tr
+        td
+          button#btnProcess(disabled) Update!
+      
